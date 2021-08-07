@@ -1,7 +1,9 @@
 # Algoritmo e Introdução a Computação - ICD002
 
 **Curso:** Ciência de Dados
+
 **Instituição:** Fatec Baixada Santista - Rubens Lara
+
 **Professor:** Maurício Conceição Mario
 
 ### Ementa
@@ -11,5 +13,6 @@ Conceitos básicos sobre algoritmos e métodos para sua construção. Tipos de d
 Desenvolver as habilidades básicas de programação de computadores visando construção de aplicativos por meio de bibliotecas apropriadas à Ciência de Dados.
 
 ### Anotação
-O professor uso o Spider do pacote Anaconda3, mas aproveitei para refazê-los no PyCharm e no VSCode, usando outras IDEs mais difundidas e aproveitando para treinar o código e essas IDEs.
+Este repositório contém os exemplos e exercícios de Algoritmo aplicados no curso, em linguagem Python.
 
+O professor uso o Spider do pacote Anaconda3, mas aproveitei para refazê-los no PyCharm e no VSCode, usando outras IDEs mais difundidas e aproveitando para treinar o código e essas IDEs.
