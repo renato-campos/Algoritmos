@@ -18,9 +18,11 @@ educfisica = float(input('Digite a nota de Educação Física: '))
 geografia = float(input('Digite a nota de Geografia: '))
 media = (portugues + matematica + historia + educfisica + geografia)/5
 if media >= 5.0:
-    result = 'APROVADO'
+    cond = 'média >= 5.0'
+    result = '\033[1;32mAPROVADO\033[m'
 else:
-    result = 'REPROVADO'
+    cond = 'média < 5.0'
+    result = '\033[1;31mREPROVADO\033[m'
 print()
 print('*' * 10, 'NOTAS', '*' * 10)
 print('Aluno: ', nome, sobrenome)
@@ -31,3 +33,4 @@ print('Educação Física:', educfisica)
 print('Geogragia:\t\t', geografia)
 print('-' * 27)
 print('Média:\t\t\t', media, ' -> ', result)
+print('Estado da Condição -> True para', cond)

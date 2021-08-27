@@ -26,10 +26,11 @@ print('\nInformações do Contribuinte:')
 print('Nome:\t\t', nome)
 print('Endereço:\t',endereço)
 print('CPF:\t\t', cpf)
-print(f'Renda Anual:\tR$ {renda:10.2f}')
-print(f'Imposto Pago:\tR$ {pago:10.2f}')
+print(f'Renda Anual:\t\tR$ {renda:10.2f}')
+print(f'Imposto Pago:\t\tR$ {pago:10.2f}')
 if renda <= 44000:
-    imposto = 0
+    imposto = pago
+    print(f'Imposto a restituir:\033[1;32mR$ {imposto:10.2f}\033[m')
 else:
     imposto = renda * 0.15 - pago
-print(f'Imposto a pagar:R$ {imposto:10.2f}')
+    print(f'Imposto a pagar:\t\033[1;31mR$ {imposto:10.2f}\033[m')
