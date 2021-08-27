@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Exemplo 02: Referência do objeto - Tipagem dinâmica
+Aula 03a: Referência do objeto - Tipagem dinâmica
 
 Created on Fri Aug 13 10:28:09 2021
 

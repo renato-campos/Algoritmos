@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Exercício 2: Utilizar o comando print para mostrar no console os tipos de
+Exercício 3.2: Utilizar o comando print para mostrar no console os tipos de
 dados das variáveis utilizadas no exercício 1
 
 Created on Fri Aug 13 10:58:59 2021

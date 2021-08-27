@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Exemplo 3: Operadores Relacionais e Operadores Lógicos
+Aula 3: Operadores Relacionais e Operadores Lógicos
 
 Created on Fri Aug 13 11:55:50 2021
 

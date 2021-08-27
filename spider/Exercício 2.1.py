@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Exercício 1 : Escrever código Python para atribuir à uma variável “funcionário”
+Exercício 3.1 : Escrever código Python para atribuir à uma variável “funcionário”
 O nome do funcionário de uma empresa; à variável “idade”, sua idade; à variável
 “endereço”, o endereço do funcionário; à variável “função”, o cargo do funcionario
 e à variável “salário”, o valor do seu salário. Utilizar o comando print para

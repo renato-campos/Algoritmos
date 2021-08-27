@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Exercício 3: escrever código Python para verificar os resultados das expressões:
+Exercício 3.3: escrever código Python para verificar os resultados das expressões:
 a) True or False and not True (justificar o resultadp)
 b) salário > 1000 and idade > 18  atribuir valores para salário e idade.
 c) Utilizar a expressão A > B and C or D para completar os resultados da

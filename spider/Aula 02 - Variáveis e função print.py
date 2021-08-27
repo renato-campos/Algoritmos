@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 """
+Aula 02 - Teoria - Variáveis, Tipos e função print( )
+
 Created on Fri Aug  6 23:12:59 2021
 
 @author: Renato
