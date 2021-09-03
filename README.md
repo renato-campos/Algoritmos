@@ -15,4 +15,4 @@ Desenvolver as habilidades básicas de programação de computadores visando con
 ### Anotação
 Este repositório contém os exemplos e exercícios de Algoritmo aplicados no curso, em linguagem Python.
 
-O professor uso o Spider do pacote Anaconda3, mas aproveitei para refazê-los no PyCharm e no VSCode, usando outras IDEs mais difundidas e aproveitando para treinar o código e essas IDEs.
+O professor usou o Spider do pacote Anaconda3, mas também fiz uso do PyCharm e VSCode.
