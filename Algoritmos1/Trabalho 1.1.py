@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Trabalho 1 de Algoritmo - Exercício 1 - Teste de Variáveis
-
 Escrever código Python para testar os valores das variáveis A à F na tabela
 e mostrar os resultados no console, para a expressão:
 Inserir os valores pelo console.  
@@ -13,7 +12,6 @@ A       B    	C	    D 	    E 	    F 	     resultado
 7.8 	6.4 	False 	5.0 	-5.0 	True 	 
 
 Created on Fri Aug 27 10:25:54 2021
-
 @author: Renato
 """
 

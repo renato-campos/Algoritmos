@@ -29,30 +29,30 @@ Created on Fri Aug 27 11:51:18 2021
 # Entrada de preços dos produtos
 '''
 arroz = float(input('Qual o preço do arroz (kg): R$ '))
-feijão = float(input('Qual o preço do feijão (kg): R$ '))
-açucar = float(input('Qual o preço do açucar (kg): R$ '))
-batata = float(input('Qual o preço da batata (kg): R$ '))
-óleo = float(input('Qual o preço do óleo (l): R$ '))
-bol_agua = float(input('Qual o preço da bolacha de água e sal (pacote): R$ '))
-bol_maiz = float(input('Qual o preço da bolacha de maizena (pacote): R$ '))
-banana = float(input('Qual o preço da banana (dúzia): R$ '))
-couve_flor = float(input('Qual o preço da couve-flor (maço): R$ '))
-leite_po = float(input('Qual o preço do leite em pó (kg): R$ '))
-# Entrada das quantidade
 qtde_arroz = float(input('Quantidade de arroz (kg): '))
+feijão = float(input('Qual o preço do feijão (kg): R$ '))
 qtde_feijão = float(input('Quantidade de feijão (kg): '))
+açucar = float(input('Qual o preço do açucar (kg): R$ '))
 qtde_açucar = float(input('Quantidade de açucar (kg): '))
+batata = float(input('Qual o preço da batata (kg): R$ '))
 qtde_batata = float(input('Quantidade de batata (kg): '))
+óleo = float(input('Qual o preço do óleo (l): R$ '))
 qtde_óleo = float(input('Quantidade de óleo (l): '))
+bol_agua = float(input('Qual o preço da bolacha de água e sal (pacote): R$ '))
 qtde_bol_agua = float(input('Quantidade de bolacha água e sal (pacote): '))
+bol_maiz = float(input('Qual o preço da bolacha de maizena (pacote): R$ '))
 qtde_bol_maiz = float(input('Quantidade de bolacha de maizena (pacote): '))
+banana = float(input('Qual o preço da banana (dúzia): R$ '))
 qtde_banana = float(input('Quantidade de banana (dúzia): '))
+couve_flor = float(input('Qual o preço da couve-flor (maço): R$ '))
 qtde_couve_flor = float(input('Quantidade de couve-flor (maço): '))
+leite_po = float(input('Qual o preço do leite em pó (kg): R$ '))
 qtde_leite_po = float(input('Quantidade de leite em pó (lata): '))
 '''
-#Entrada em tupla - REMOVER PARA ENTREGA - APENAS PARA TESTES
+#Entrada em tupla - REMOVER ANTES DA ENTREGA - APENAS PARA TESTES
 arroz, feijão, açucar, batata, óleo, bol_agua, bol_maiz, banana, couve_flor, leite_po = 4, 7.19, 3.87, 3.99, 7.99, 2.79, 3.99, 5, 4, 34.84
 qtde_arroz ,qtde_feijão , qtde_açucar , qtde_batata, qtde_óleo, qtde_bol_agua, qtde_bol_maiz, qtde_banana, qtde_couve_flor, qtde_leite_po = 5, 3, 2, 3, 5, 1, 1, 1.5, 2, 2
+
 # Exibição no console com os cálculos
 print('Comprovante de Compra do Supermercado')
 print('{:22}{}   {:>5}   {}'.format('Produto', 'Quantidade', 'Preço', 'Total por Produto'))
@@ -70,8 +70,8 @@ print('-' * 60)
 total = qtde_arroz * arroz + qtde_feijão * feijão + qtde_açucar * açucar + qtde_batata * batata + qtde_óleo * óleo +\
         + qtde_bol_agua * bol_agua + qtde_bol_maiz * bol_maiz + qtde_banana * banana + qtde_couve_flor * couve_flor +\
         + qtde_leite_po * leite_po
-print(f'Valor total da compra: R$ {total:34.2f}')
-limite = float(input('Valor limite da compra: R$ '))
+print(f'Valor total da compra: \t\t\t\t\t\t\tR$ {total:9.2f}')
+limite = float(input('Digite o valor limite da compra: R$ '))
 if total < limite:
     print('\033[1;42mPagamento em dinheiro\033[m')
 else:
