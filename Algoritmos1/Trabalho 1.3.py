@@ -27,7 +27,6 @@ Created on Fri Aug 27 11:51:18 2021
 @author: Renato
 """
 # Entrada de preços dos produtos
-'''
 arroz = float(input('Qual o preço do arroz (kg): R$ '))
 qtde_arroz = float(input('Quantidade de arroz (kg): '))
 feijão = float(input('Qual o preço do feijão (kg): R$ '))
@@ -48,31 +47,28 @@ couve_flor = float(input('Qual o preço da couve-flor (maço): R$ '))
 qtde_couve_flor = float(input('Quantidade de couve-flor (maço): '))
 leite_po = float(input('Qual o preço do leite em pó (kg): R$ '))
 qtde_leite_po = float(input('Quantidade de leite em pó (lata): '))
-'''
-#Entrada em tupla - REMOVER ANTES DA ENTREGA - APENAS PARA TESTES
-arroz, feijão, açucar, batata, óleo, bol_agua, bol_maiz, banana, couve_flor, leite_po = 4, 7.19, 3.87, 3.99, 7.99, 2.79, 3.99, 5, 4, 34.84
-qtde_arroz ,qtde_feijão , qtde_açucar , qtde_batata, qtde_óleo, qtde_bol_agua, qtde_bol_maiz, qtde_banana, qtde_couve_flor, qtde_leite_po = 5, 3, 2, 3, 5, 1, 1, 1.5, 2, 2
-
-# Exibição no console com os cálculos
+# Exibição no console com os cálculos por produto
 print('Comprovante de Compra do Supermercado')
-print('{:22}{}   {:>5}   {}'.format('Produto', 'Quantidade', 'Preço', 'Total por Produto'))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Arroz', qtde_arroz, arroz, qtde_arroz * arroz))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Feijão', qtde_feijão, feijão, qtde_feijão * feijão))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Açucar', qtde_açucar, açucar, qtde_açucar * açucar))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Batata', qtde_batata, batata, qtde_batata * batata))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Óleo', qtde_óleo, óleo, qtde_óleo * óleo))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Bolacha Água e Sal', qtde_bol_agua, bol_agua, qtde_bol_agua * bol_agua))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Bolacha de Maizena', qtde_bol_maiz, bol_maiz, qtde_bol_maiz * bol_maiz))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Banana', qtde_banana, banana, qtde_banana * banana))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Couve-flor', qtde_couve_flor, couve_flor, qtde_couve_flor * couve_flor))
-print('{:22}{:10}{:8.2f}{:20.2f}'.format('Leite em pó', qtde_leite_po, leite_po, qtde_leite_po * leite_po))
+print('Produto\t\t\t\t\t\t      Qtde\t\tPreço\tSubtotal')
+print(f'Arroz\t\t\t\t\t\t{qtde_arroz:10.1f}\t{arroz:9.2f}\t{qtde_arroz * arroz:7.2f}')
+print(f'Feijão\t\t\t\t\t\t{qtde_feijão:10.1f}\t{feijão:9.2f}\t{qtde_feijão * feijão:7.2f}')
+print(f'Açucar\t\t\t\t\t\t{qtde_açucar:10.1f}\t{açucar:9.2f}\t{qtde_açucar * açucar:7.2f}')
+print(f'Batata\t\t\t\t\t\t{qtde_batata:10.1f}\t{batata:9.2f}\t{qtde_batata * batata:7.2f}')
+print(f'Óleo\t\t\t\t\t\t{qtde_óleo:10.1f}\t{óleo:9.2f}\t{qtde_óleo * óleo:7.2f}')
+print(f'Bolacha Água e Sal\t\t\t{qtde_bol_agua:10.1f}\t{bol_agua:9.2f}\t{qtde_bol_agua * bol_agua:7.2f}')
+print(f'Bolacha de Maizena\t\t\t{qtde_bol_maiz:10.1f}\t{bol_maiz:9.2f}\t{qtde_bol_maiz * bol_maiz:7.2f}')
+print(f'Banana\t\t\t\t\t\t{qtde_banana:10.1f}\t{banana:9.2f}\t{qtde_banana * banana:7.2f}')
+print(f'Couve-flor\t\t\t\t\t{qtde_couve_flor:10.1f}\t{couve_flor:9.2f}\t{qtde_couve_flor * couve_flor:7.2f}')
+print(f'Leite em pó\t\t\t\t\t{qtde_leite_po:10.1f}\t{leite_po:9.2f}\t{qtde_leite_po * leite_po:7.2f}')
 print('-' * 60)
+# Exibição e cálculo do total
 total = qtde_arroz * arroz + qtde_feijão * feijão + qtde_açucar * açucar + qtde_batata * batata + qtde_óleo * óleo +\
         + qtde_bol_agua * bol_agua + qtde_bol_maiz * bol_maiz + qtde_banana * banana + qtde_couve_flor * couve_flor +\
         + qtde_leite_po * leite_po
-print(f'Valor total da compra: \t\t\t\t\t\t\tR$ {total:9.2f}')
+print(f'Valor total da compra:\t\t\t\t\t\t\tR${total:9.2f}')
+# Entrada e decisão da forma de pagamento
 limite = float(input('Digite o valor limite da compra: R$ '))
 if total < limite:
-    print('\033[1;42mPagamento em dinheiro\033[m')
+    print('Pagamento em dinheiro')
 else:
-    print('\033[1;41mPagamento em parcelas com uso do cartão\033[m')
+    print('Pagamento em parcelas com uso do cartão')

@@ -28,5 +28,6 @@ print()
 print('*' * 10, 'Previsão do tempo', '*' * 10)
 print(f'''Dadas as leituras:
 Temperatura {temperatura:.1f}ºC
-Umidade Relativa do Ar {umidade}%
-A previsão do tempo é de que \033[7m{previsão}\033[m''')
+Umidade Relativa do Ar {umidade}%\n
+A previsão do tempo é de que
+{previsão}''')

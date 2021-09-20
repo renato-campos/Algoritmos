@@ -1,17 +1,15 @@
-# -*- coding: utf-8 -*-
-"""
-Exercício 3: Construir código em Python que possa ler 5 códigos de produtos e
-retornar no console o valor do preço do produto em função do código. Códigos e
-respectivos preços são dados na tabela a seguir:
-código  preço
-1       13.30
-2       1.40
-3       19.00
-4       123.79
-5       44.33
-Created on Fri Sep 03 11:30:11 2021
-@author: Renato
-"""
+# Exercício 3: Construir código em Python que possa ler 5 códigos de produtos e
+# retornar no console o valor do preço do produto em função do código. Códigos e
+# respectivos preços são dados na tabela a seguir:
+# código  preço
+# 1       13.30
+# 2       1.40
+# 3       19.00
+# 4       123.79
+# 5       44.33
+# Created on Fri Sep 03 11:30:11 2021
+# @author: Renato
+
 # Entrada do código do produto
 codigo = int(input('Digite o código do produto: '))
 # Determinação do preço conforme o código entrado
