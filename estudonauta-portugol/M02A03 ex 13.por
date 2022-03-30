@@ -4,18 +4,16 @@ programa
 	
 	funcao inicio()
 	{
-		cadeia nome
-		real salario, aumento
-		escreva("Nome do funcionário: ")
-		leia(nome)
-		escreva("Salário: R$")
-		leia(salario)
-		escreva("Reajuste (%): ")
-		leia(aumento)
-		escreva("\n--------RESULTADO--------\n")
-		escreva(nome + " ganhava R$" + math.arredondar(salario, 2))
-		escreva("\ne depois de ganhar " + aumento + "% de aumento")
-		escreva("\nvai passar a receber R$" + math.arredondar(salario*(1+aumento/100), 2))
+		real nota1, nota2, media
+		escreva("Digite sua primeira nota: ")
+		leia(nota1)
+		escreva("Digite sua segunda nota: ")
+		leia(nota2)
+		media = (nota1 + nota2) / 2
+		se (media >= 7.0){
+			escreva("Parabéns\n")
+		}
+		escreva("Sua média foi de ", math.arredondar(media, 2))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +21,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 230; 
+ * @POSICAO-CURSOR = 354; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

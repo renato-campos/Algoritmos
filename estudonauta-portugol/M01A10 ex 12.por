@@ -1,15 +1,14 @@
-// Primeiro exercício do M01A05 - Lógica de Programação - Prof Guanabara
-// Data: 2021/12/13
-// Autor: Renato
 programa
 {
+	inclua biblioteca Texto --> txt
 	
 	funcao inicio()
 	{
-		 cadeia nome
-		 escreva("Olá, qual o seu nome? ")
-		 leia(nome)
-		 escreva("Tudo bem, " + nome + "? É um grande prazer te conhecer!")
+		cadeia nome, nome1
+		escreva("Digite seu nome completo: ")
+		leia(nome)
+		nome1 = txt.extrair_subtexto(nome, 0, txt.posicao_texto(" ", nome, 0))
+		escreva("Seu primeiro nome é " + nome1)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +16,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 227; 
+ * @POSICAO-CURSOR = 265; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

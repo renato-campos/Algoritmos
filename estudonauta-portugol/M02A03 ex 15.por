@@ -1,13 +1,17 @@
 programa
 {
-	inclua biblioteca Matematica --> math
+	inclua biblioteca Calendario --> c
 	
 	funcao inicio()
 	{
-		real preco
-		escreva("Qual é o preço do produto? R$")
-		leia(preco)
-		escreva("Com 5% de desconto, o produto sai por R$" + math.arredondar(0.95*preco, 2))
+		inteiro nasc, idade
+		escreva("Em que ano você nasceu? ")
+		leia(nasc)
+		idade = c.ano_atual() - nasc
+		escreva("Você tem " + idade + " anos, certo? Seja bem-vindo(a) ao Banco!\n")
+		se (idade >= 65){
+			escreva("*** ATENÇÃO ***\nDIRIJA-SE AO CAIXA PREFERENCIAL!")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -15,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 231; 
+ * @POSICAO-CURSOR = 301; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

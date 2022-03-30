@@ -1,17 +1,16 @@
 programa
 {
-	inclua biblioteca Matematica --> math
+	inclua biblioteca Texto --> txt
 	
 	funcao inicio()
 	{
-		real largura, altura, area
-		escreva("Largura da parede: ")
-		leia(largura)
-		escreva("Altura de parede: ")
-		leia(altura)
-		area = largura * altura
-		escreva("\nUma parede " + largura + " X " + altura + " tem uma área de " + math.arredondar(area, 2) + " m²")
-		escreva("\nPrecisaremos de " + math.arredondar(area/2, 1) + " latas de tinta.")
+		cadeia cidade
+		escreva("Em que cidade você mora? ")
+		leia(cidade)
+		escreva("---------- ANALISANDO ----------")
+		escreva("\nVocê mora na cidade " + txt.caixa_alta(cidade))
+		escreva("\nA primeira letra é " + txt.obter_caracter(cidade, 0))
+		escreva("\nE contém " + txt.numero_caracteres(cidade) + " caracteres")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 329; 
+ * @POSICAO-CURSOR = 245; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

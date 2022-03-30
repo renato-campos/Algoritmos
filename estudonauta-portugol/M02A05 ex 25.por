@@ -1,17 +1,16 @@
 programa
 {
-	inclua biblioteca Matematica --> math
-	inclua biblioteca Tipos --> t
 	
 	funcao inicio()
 	{
-		real nota1, nota2, media
-		escreva("Primeira nota: ")
-		leia(nota1)
-		escreva("Segunda nota: ")
-		leia(nota2)
-		escreva("\n\nAs notas do aluno foram " + nota1 + " e " + nota2)
-		escreva("\nA média final foi " + (nota1 + nota2)/2)
+		inteiro n1, n2, n3
+		escreva("Digite um valor:")
+		leia(n1)
+		escreva("Digite outro valor:")
+		leia(n2)
+		escreva("Digite mais um valor:")
+		leia(n3)
+		se
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 188; 
+ * @POSICAO-CURSOR = 195; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
