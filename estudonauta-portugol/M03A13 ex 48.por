@@ -1,23 +1,27 @@
 programa
 {
+	inclua biblioteca Util
 	
 	funcao inicio()
 	{
-		inteiro ano
-		logico flag
-		escreva("Digite um ano qualquer: ")
-		leia(ano)
-		se ((ano % 4 == 0) e (ano % 100 != 0) ou (ano % 400 == 0)){
-			flag = verdadeiro
-		}senao{
-			flag = falso
+		inteiro num, i, div = 0
+		escreva("Digite um número: ")
+		leia(num)
+		para(i=1; i<=num; i++){
+			se(num % i == 0){
+				div++
+				escreva("[", i, "] ")
+			}senao{
+				escreva(i," ")
+			}
+			Util.aguarde(250)
 		}
-		se (flag == verdadeiro e (ano > 1582)){
-			escreva("O ano de " + ano + " é bissexto.\n")
+		escreva("\nO número ", num, " foi divisível ", div, " vezes")
+		se(div > 2 ou num == 1){
+			escreva("\nLogo, NÃO É PRIMO")
 		}senao{
-			escreva("O ano de " + ano + " não é bissexto.")
+			escreva("\nLogo, É PRIMO")
 		}
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 203; 
+ * @POSICAO-CURSOR = 443; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

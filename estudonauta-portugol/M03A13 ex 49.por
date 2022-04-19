@@ -1,23 +1,25 @@
 programa
 {
-	
+	inclua biblioteca Util
 	funcao inicio()
 	{
-		inteiro ano
-		logico flag
-		escreva("Digite um ano qualquer: ")
-		leia(ano)
-		se ((ano % 4 == 0) e (ano % 100 != 0) ou (ano % 400 == 0)){
-			flag = verdadeiro
-		}senao{
-			flag = falso
+		inteiro qtdde, num1 = 0, num2 = 1, aux, i
+		escreva("Quantos elementos você quer exibir? ")
+		leia(qtdde)
+		para(i = 1; i<=qtdde; i++){
+			se(i == 1){
+				escreva(num1, " ")
+			}senao se(i == 2){
+				escreva(num2, " ")
+			}senao{
+				aux = num2
+				num2 += num1
+				num1 = aux
+				escreva(num2, " ")
+			}
+			Util.aguarde(250)
 		}
-		se (flag == verdadeiro e (ano > 1582)){
-			escreva("O ano de " + ano + " é bissexto.\n")
-		}senao{
-			escreva("O ano de " + ano + " não é bissexto.")
-		}
-		
+		escreva("PRONTO!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 203; 
+ * @POSICAO-CURSOR = 405; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

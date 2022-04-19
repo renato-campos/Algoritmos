@@ -1,6 +1,6 @@
 programa
 {
-	
+	inclua biblioteca Matematica --> mat
 	funcao inicio()
 	{
 		real dist, valor
@@ -14,7 +14,7 @@ programa
 			valor = dist * preco2
 			escreva("Uma viagem de " + dist + " Km custará R$" + preco2 + " /Km\n")
 		}
-		escreva("Valor total: R$ " + valor)
+		escreva("Valor total: R$ " + mat.arredondar(valor, 2))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 431; 
+ * @POSICAO-CURSOR = 486; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

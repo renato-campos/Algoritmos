@@ -1,23 +1,20 @@
 programa
 {
+	inclua biblioteca Util
 	
 	funcao inicio()
 	{
-		inteiro ano
-		logico flag
-		escreva("Digite um ano qualquer: ")
-		leia(ano)
-		se ((ano % 4 == 0) e (ano % 100 != 0) ou (ano % 400 == 0)){
-			flag = verdadeiro
-		}senao{
-			flag = falso
+		inteiro andar, kandar, kestrela, total = 1
+		escreva("Quantos andares? ")
+		leia(andar)
+		para(kandar = 1; kandar <= andar; kandar++){
+			para(kestrela = 1; kestrela <= total; kestrela++){
+				escreva("*")
+				Util.aguarde(150)
+			}
+			total += 1		// número de estrelas a mais por andar
+			escreva("\n")
 		}
-		se (flag == verdadeiro e (ano > 1582)){
-			escreva("O ano de " + ano + " é bissexto.\n")
-		}senao{
-			escreva("O ano de " + ano + " não é bissexto.")
-		}
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 203; 
+ * @POSICAO-CURSOR = 345; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

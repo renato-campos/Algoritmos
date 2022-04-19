@@ -1,6 +1,6 @@
 programa
 {
-	inclua biblioteca Calendario --> c
+	inclua biblioteca Calendario --> c
 	
 	funcao inicio()
 	{
@@ -12,7 +12,7 @@ programa
 		escreva("\nQuanto dinheiro você tem? R$ ")
 		leia(valor)
 		hora = c.hora_atual(falso)
-		se (hora < horario e valor > preco){
+		se (hora <= horario e valor >= preco){
 			escreva("Agora são " + hora + "h. Você consegue comprar o ingresso.")
 		}senao{
 			escreva("Infelizmente não é mais possível comprar o ingresso.")
@@ -24,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 388; 
+ * @POSICAO-CURSOR = 446; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
