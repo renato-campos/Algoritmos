@@ -47,7 +47,7 @@ programa
 				bombas = 13
 				pare
 		}
-		// sorteio das posições das bombas
+		// sorteio das posições das bombas sem repetições
 		inteiro k=1
 		enquanto(k<=bombas){
 			linha = sorteia(0,u.numero_linhas(show)-1)
@@ -68,6 +68,7 @@ programa
 		
 		enquanto(jogada<5){
 			jogada++
+			limpa()
 			para(inteiro i=0; i<u.numero_linhas(show); i++){
 				para(inteiro j=0; j <u.numero_colunas(show); j++){
 					escreva(show[i][j], " ")
@@ -125,6 +126,7 @@ programa
 				escreva("--> TIRO ERRADO! Acertou uma bomba!\n")
 				pare
 			}
+			u.aguarde(1500)
 		}
 		escreva("============================================\n")
 		escreva("FIM DO JOGO!\n\n")
@@ -143,7 +145,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1739; 
+ * @POSICAO-CURSOR = 1312; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
